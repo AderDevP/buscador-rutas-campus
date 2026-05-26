@@ -1,0 +1,32 @@
+DIAGRAMA DEL GRAFO DEL CAMPUS (datos de data/campus.txt)
+========================================================
+
+Leyenda:
+  []  = ubicación (nodo)
+  --N-- = arista no dirigida con peso N (metros)
+
+
+                                  (40)
+                  [Entrada] ───────────────── [Parqueadero]
+                       │                              │
+                     (60)                          (150)
+                       │                              │
+                  [BloqueA] ── (50) ── [BloqueB] ── (45) ── [BloqueC]
+                       │                  │                    │
+                     (80)               (65)                (70)
+                       │                  │                    │
+                 [Biblioteca]      [Laboratorios]         [Auditorio]
+                       │                  │                    │
+                     (30)               (75)                 (90)
+                       │                  │                    │
+                       └── [Cafeteria] ───┘               [Coliseo]
+                                │
+                              (55)
+                                │
+                            [BloqueC]   (misma instancia, ciclo en el grafo)
+
+
+Resumen:
+  Nodos:  10
+  Aristas: 12
+  Conexo:  Sí (todas las ubicaciones son alcanzables entre sí)
