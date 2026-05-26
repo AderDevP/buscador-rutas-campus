@@ -1,0 +1,32 @@
+# =====================================================================
+# Datos de ejemplo: campus universitario
+# Formato:
+#   NODO <nombre>
+#   ARISTA <origen> <destino> <peso_en_metros>
+# =====================================================================
+
+# --- Ubicaciones (bloques, salones y puntos de interés) ---
+NODO Entrada
+NODO BloqueA
+NODO BloqueB
+NODO BloqueC
+NODO Biblioteca
+NODO Cafeteria
+NODO Auditorio
+NODO Laboratorios
+NODO Coliseo
+NODO Parqueadero
+
+# --- Conexiones (caminos transitables, peso en metros) ---
+ARISTA Entrada       Parqueadero    40
+ARISTA Entrada       BloqueA        60
+ARISTA BloqueA       BloqueB        50
+ARISTA BloqueB       BloqueC        45
+ARISTA BloqueA       Biblioteca     80
+ARISTA Biblioteca    Cafeteria      30
+ARISTA Cafeteria     BloqueC        55
+ARISTA BloqueC       Auditorio      70
+ARISTA Auditorio     Coliseo        90
+ARISTA Laboratorios  BloqueB        65
+ARISTA Laboratorios  Cafeteria      75
+ARISTA Parqueadero   Coliseo       150
